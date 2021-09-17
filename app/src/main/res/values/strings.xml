@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Herb-teas</string>
+    <string name="teas_name">Nama Teh Herbal</string>
+    <string name="teas_detail">Detail Teh</string>
+    <string name="dtv_tea_name">dtv_tea_name</string>
+    <string name="dtv_tea_detail">dtv_tea_detail</string>
+    <string name="my_name">I Putu Bagus Merta Sentana</string>
+    <string name="my_email">merta.bagus24@gmail.com</string>
+    <string name="action_favorite">move_about_me</string>
+</resources>
