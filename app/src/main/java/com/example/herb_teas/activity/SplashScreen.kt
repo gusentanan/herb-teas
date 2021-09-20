@@ -1,10 +1,12 @@
-package com.example.herb_teas
+package com.example.herb_teas.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
+import com.example.herb_teas.MainActivity
+import com.example.herb_teas.R
 
 @Suppress("DEPRECATION")
 class SplashScreen : AppCompatActivity() {

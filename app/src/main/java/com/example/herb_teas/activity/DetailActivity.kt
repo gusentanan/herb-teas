@@ -1,9 +1,11 @@
-package com.example.herb_teas
+package com.example.herb_teas.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.herb_teas.R
+import com.example.herb_teas.model.Teas
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var dteaName: TextView
@@ -11,9 +13,7 @@ class DetailActivity : AppCompatActivity() {
     private  lateinit var dteaImg: ImageView
 
     companion object {
-        const val EXTRA_NAME = "extra_name"
-        const val EXTRA_DETAIL = "extra_detail"
-        const val EXTRA_IMAGE = "extra_image"
+        const val EXTRA_TEA = "extra_tea"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,13 +29,11 @@ class DetailActivity : AppCompatActivity() {
         dteaDetail = findViewById(R.id.dtv_tea_detail)
         dteaImg = findViewById(R.id.img_tea_detail)
 
-        val teaName = intent.getStringExtra(EXTRA_NAME)
-        val teaDetail = intent.getStringExtra(EXTRA_DETAIL)
-        val teaImg = intent.getIntExtra(EXTRA_IMAGE, 0)
+        val tea = intent.getParcelableExtra<Teas>(EXTRA_TEA) as Teas
 
-        dteaName.text = teaName
-        dteaDetail.text = teaDetail
-        dteaImg.setImageResource(teaImg)
+        dteaName.text = tea.name
+        dteaDetail.text = tea.detail
+        dteaImg.setImageResource(tea.img)
 
     }
 

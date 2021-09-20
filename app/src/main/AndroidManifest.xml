@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Herbteas">
         <activity
-            android:name=".SplashScreen"
+            android:name=".activity.SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
             <intent-filter>
@@ -20,10 +20,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutMe"
+            android:name=".activity.AboutMe"
             android:exported="true" />
         <activity
-            android:name=".DetailActivity"
+            android:name=".activity.DetailActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

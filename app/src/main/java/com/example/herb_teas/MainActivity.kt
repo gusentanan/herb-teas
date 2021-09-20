@@ -1,16 +1,17 @@
 package com.example.herb_teas
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.herb_teas.activity.AboutMe
+import com.example.herb_teas.activity.DetailActivity
+import com.example.herb_teas.adapter.ListTeaAdapter
+import com.example.herb_teas.data.TeaData
+import com.example.herb_teas.model.Teas
 
 class MainActivity : AppCompatActivity() {
     private lateinit var rvTeas: RecyclerView
@@ -46,9 +47,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSelectedTea(tea: Teas){
         val moveData = Intent(this@MainActivity, DetailActivity::class.java)
-        moveData.putExtra(DetailActivity.EXTRA_NAME, tea.name)
-        moveData.putExtra(DetailActivity.EXTRA_DETAIL, tea.detail)
-        moveData.putExtra(DetailActivity.EXTRA_IMAGE, tea.img)
+        moveData.putExtra(DetailActivity.EXTRA_TEA, tea)
         startActivity(moveData)
 
     }

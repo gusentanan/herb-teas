@@ -1,4 +1,4 @@
-package com.example.herb_teas
+package com.example.herb_teas.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.example.herb_teas.R
+import com.example.herb_teas.model.Teas
 
 class ListTeaAdapter(private val listTea: ArrayList<Teas>): RecyclerView.Adapter<ListTeaAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback

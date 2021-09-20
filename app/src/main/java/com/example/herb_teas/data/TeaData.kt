@@ -1,4 +1,7 @@
-package com.example.herb_teas
+package com.example.herb_teas.data
+
+import com.example.herb_teas.R
+import com.example.herb_teas.model.Teas
 
 object TeaData {
     private val teaName = arrayOf(

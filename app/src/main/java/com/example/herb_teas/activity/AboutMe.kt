@@ -1,8 +1,9 @@
-package com.example.herb_teas
+package com.example.herb_teas.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import com.example.herb_teas.R
 
 class AboutMe : AppCompatActivity() {
     private lateinit var myImage: ImageView
